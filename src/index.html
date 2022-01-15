@@ -47,28 +47,32 @@
       </div>
     </header>
 
-    <section style="border: 1px solid red; width: 100%; margin: 10px">
+    <!-- Мейн, галлерея -->
+
+    <section class="main-section" style="border: 1px solid red; margin: 10px">
       <h2 class="visually-hidden">Found movies</h2>
 
       <div class="cards-gallery">
-        <ul class="cards-gallery_list">
-          <li class="movie-card">
+        <ul class="cards-gallery__list">
+          <li class="cards-gallery__item">
             <img
-              class="movie-card_image"
+              class="cards-gallery__image"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_O1MGZeZnRHLdzRE-Kk9fOGIbPGhMFUkFd8RTDwJ6xGGgdGEQRCP6kzS9L3APD0QLQFU&usqp=CAU"
               alt="image is not found"
             />
-            <p class="movie-card_title"></p>
-            <p class="movie-card_info">
-              <span class="movie-card_janre"> Western </span> |
-              <span class="movie-card_premiere">2020</span>
-              <span class="movie-card_rating">7.3</span>
-            </p>
+            <div class="cards-gallery__wrapper">
+              <p class="cards-gallery__title">Name</p>
+              <p class="cards-gallery__info">
+                <span class="cards-gallery__janre"> Western </span> |
+                <span class="cards-gallery__premiere">2020</span>
+                <span class="cards-gallery__rating">7.3</span>
+              </p>
+            </div>
           </li>
         </ul>
       </div>
 
-      <div class="cards-gallery_pagination">&lt; 1 2 ... 6 7 8 ... 15 &gt;</div>
+      <div class="cards-gallery__pagination">&lt; 1 2 ... 6 7 8 ... 15 &gt;</div>
     </section>
 
     <footer style="border: 1px solid yellow; width: 100%; margin: 10px">

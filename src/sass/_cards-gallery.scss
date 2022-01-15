@@ -1,0 +1,117 @@
+.main-section {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  //   min-height: calc(100vh - 230px - 100px);
+
+  @media (min-width: 768px) {
+    padding: 60px 0;
+  }
+}
+
+.cards-gallery {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: 768px) {
+    padding-left: 76px;
+    padding-right: 75px;
+  }
+  @media (min-width: 1024px) {
+    padding-left: 71px;
+    padding-right: 71px;
+  }
+}
+
+.cards-gallery__list {
+  margin-left: -20px;
+  margin-top: -20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    margin-left: -30px;
+    margin-top: -30px;
+    justify-content: start;
+  }
+}
+
+.cards-gallery__item {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  max-width: 280px;
+  flex-basis: calc(100% - 20px);
+
+  @media (min-width: 768px) {
+    margin-left: 30px;
+    margin-top: 30px;
+
+    max-width: 294px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 274px;
+    flex-basis: calc((100% - 90px) / 3);
+  }
+}
+
+.cards-gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cards-gallery__wrapper {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.cards-gallery__title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.cards-gallery__info {
+  margin-top: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  color: #ff6b08;
+}
+
+.cards-gallery__janre {
+  //
+}
+
+.cards-gallery__premiere {
+  //
+}
+
+.cards-gallery__rating {
+  //
+}
+
+.cards-gallery__pagination {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 40px;
+
+  @media (min-width: 768px) {
+    padding-left: 76px;
+    padding-right: 75px;
+    margin-top: 50px;
+  }
+  @media (min-width: 1024px) {
+    padding-left: 71px;
+    padding-right: 71px;
+  }
+}
