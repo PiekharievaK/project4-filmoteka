@@ -13,7 +13,7 @@ var e,t=arguments[3];!function(t,r){"object"==typeof exports&&"object"==typeof m
 },{"../../templates/film-card-main.hbs":"zWXX","../../templates/film-card-library.hbs":"yju2"}],"yCJU":[function(require,module,exports) {
 console.log("2");
 },{}],"aedr":[function(require,module,exports) {
-console.log("3");
+const e=document.querySelector(".cards-gallery__list"),l=document.querySelector("[film-modal-close]"),c=document.querySelector("[film-modal]");function o(){c.classList.toggle("is-hidden")}e.addEventListener("click",o),l.addEventListener("click",o),console.log(e);
 },{}],"SVbs":[function(require,module,exports) {
 console.log("4");
 },{}],"A0bL":[function(require,module,exports) {
@@ -91,4 +91,4 @@ module.exports=require("./lib/axios");
 },{"./dev-1/renders.js":"mt08","./dev-2/dev-2-main.js":"yCJU","./dev-3/dev-3-main.js":"aedr","./dev-4/dev-4-main.js":"SVbs","./dev-5/dev-5-main.js":"A0bL","./dev-6/dev-6-main.js":"HZeu","./dev-7/dev-7-main.js":"SA44","./dev-1/api.js":"SPKr"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/all-dev-parts");
 },{"./sass/main.scss":"clu1","./js/all-dev-parts":"PqnZ"}]},{},["Focm"], null)
-//# sourceMappingURL=/project4-filmoteka/src.668ff09a.js.map
+//# sourceMappingURL=/project4-filmoteka/src.7fe150ef.js.map
