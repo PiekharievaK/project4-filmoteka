@@ -48,7 +48,7 @@
       <h2 class="visually-hidden">Found movies</h2>
 
       <div class="cards-gallery">
-        <ul class="cards-gallery_list">
+        <ul class="cards-gallery__list">
           <li class="movie-card">
             <img
               class="movie-card_image"
@@ -64,20 +64,7 @@
           </li>
         </ul>
       </div>
-
-      <div class="pagination container">
-        <div class="pagination-style">
-          <button class="btn-page previous" data-index="1">&larr;</button>
-          <span class="btn-dots js-dots1">...</span>
-          <button class="btn-page1 active btn" data-index="1">1</button>
-          <button class="btn-page2 btn" data-index="2">2</button>
-          <button class="btn-page3 btn" data-index="3">3</button>
-          <button class="btn-page4 btn" data-index="4">4</button>
-          <button class="btn-page5 btn" data-index="5">5</button>
-          <span class="btn-dots js-dots">...</span>
-          <button class="btn-page next" data-index="1">&rarr;</button>
-        </div>
-      </div>
+      <div id="pagination" class="tui-pagination"></div>
     </section>
 
     <footer style="border: 1px solid yellow; width: 100%; margin: 10px">

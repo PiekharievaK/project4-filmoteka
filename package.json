@@ -26,6 +26,9 @@
     "sass": "^1.32.8"
   },
   "dependencies": {
-    "axios": "^0.24.0"
+    "axios": "^0.24.0",
+    "mongoose-paginate": "^5.0.3",
+    "tui-pagination": "^3.4.1",
+    "vuejs-paginate": "^2.1.0"
   }
 }
