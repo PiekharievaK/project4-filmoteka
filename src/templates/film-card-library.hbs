@@ -1,6 +1,10 @@
 {{#each this}}
 <li class="movie-card">
+     {{#if poster_path}}
     <img src="https://www.themoviedb.org/t/p/w500{{poster_path}}" alt="{{original_title}}" class="movie-card__image">
+    {{else}}
+    <img src="https://serial-go.org/uploads/no_poster.jpg" alt="{{original_title}}" class="movie-card__image">
+    {{/if}}
     <p class="movie-card__title">{{title}}</p>
 <div class="movie-card__text">
     <P class="movie-card__genre">{{genre}}</p> 
