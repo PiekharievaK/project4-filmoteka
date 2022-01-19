@@ -30,13 +30,11 @@
           <tr>
             <td class="movie-details-data-left">Genre</td>
            
-            <td class="movie-details-data-right">
-               {{!-- {{#if genres}} --}}
-                        {{#each genre_ids}}
+            <td class="movie-details-data-right"
+             
+                        {{#each genre_name}}
                         <span>{{this}}</span>
-                        {{/each}}
-                        {{!-- {{else}}<span>N/A</span>
-                        {{/if}}</td> --}}
+                        {{/each}}  </td>
           </tr>
         </table>
         <p class="movie-details-data_description-title">ABOUT</p>
