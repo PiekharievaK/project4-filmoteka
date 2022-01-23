@@ -8,9 +8,9 @@
     <p class="movie-card__title">{{title}}</p>
 <div class="movie-card__text">
    {{#if genre_name}}
-    <ul class="movie-card__genre"><li class="genre__element">  {{genre_name.[0]}}</li>
+    <ul class="movie-card__genre"><li class="genre__element">  {{genre_name.[0]}},</li>
     {{#if genre_name.[2]}}
-        <li class="genre__element">  {{genre_name.[1]}}</li>
+        <li class="genre__element">  {{genre_name.[1]}},</li>
         {{/if}}
          {{#if genre_name.[3]}}
         <li class="genre__element"> Other  </li>
