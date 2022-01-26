@@ -4,14 +4,10 @@ import { renderTrends } from '../dev-1/renders';
 import pagination from '../dev-1/pagination';
 import { showNotification } from '../dev-7/alert.js';
 
-
-
 const apiService = new ApiService();
 const searchForm = document.querySelector('.search-form');
 const gallery = document.querySelector('.cards-gallery__list');
 const paginationCont = document.querySelector('.pagination-container');
-
-
 
 searchForm.addEventListener('change', onFormSubmit);
 searchForm.addEventListener('submit', onFormSubmit);
@@ -21,15 +17,15 @@ function onFormSubmit(evt) {
   apiService.page = 1;
   renderSearch();
   // pagination.reset()
-  console.log( pagination.reset);
+  // console.log(pagination.reset);
 }
 
 function renderSearch(currentPage) {
-   paginationCont.classList.remove('pagination-container-is-hidden');
-  
+  paginationCont.classList.remove('pagination-container-is-hidden');
+
   // pagination.reset()
   const searchFieldValue = document.querySelector('.search-form_input').value;
-  console.log('sd',pagination)
+  // console.log('sd', pagination);
 
   if (currentPage) {
     apiService.page = currentPage;
@@ -46,12 +42,11 @@ function renderSearch(currentPage) {
 }
 
 function renderSearchedFilms(data) {
- 
   if (data.length === 0) {
     paginationCont.classList.add('pagination-container-is-hidden');
-    gallery.innerHTML = '<p class = "gallery-warning">SORRY WE CANT FIND ANY MOVIE WITH THIS NAME</p>';
+    gallery.innerHTML =
+      '<p class = "gallery-warning">SORRY WE CANT FIND ANY MOVIE WITH THIS NAME</p>';
     showNotification();
-
   } else {
     genreData(data);
   }
@@ -76,7 +71,7 @@ function idToGenre(film_list) {
 
   function changeToName(genreObject, films) {
     let storageWithGenre = [];
-    console.log(films);
+    // console.log(films);
     for (const film of films) {
       let genre_list = [];
       film.genre_ids.forEach(genre => {
@@ -96,6 +91,4 @@ function idToGenre(film_list) {
   return film_list;
 }
 
-
 export { renderSearch, idToGenre, genreData };
-
