@@ -120,6 +120,17 @@
     flex-basis: calc((100% - 90px) / 4);
   }
 }
+.modal-team-name {
+  margin-bottom: 20px;
+  color: #000000;
+  text-shadow: 0 0 5px #bbbbbb, 0 0 10px #bbbbbb, 0 0 15px #bbbbbb, 0 0 20px #b57e57,
+    0 0 30px #ff6b01, 0 0 40px #ff6b01, 0 0 55px #c08155, 0 0 75px #ff6b01, 2px 2px 2px #ffdba5;
+  // text-shadow: 0 -1px 4px #fff, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #f00;
+  // text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+  @media (min-width: 1024px) {
+    font-size: 30px;
+  }
+}
 
 .card-open-details {
   z-index: 1;
@@ -163,7 +174,7 @@
   max-height: 88vh;
   border: 1px solid black;
   border-radius: 12px;
-  padding: 35px;
+  padding: 25px 35px;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     25deg,
@@ -226,25 +237,6 @@
   align-items: center;
 }
 
-.social__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  fill: black;
-
-  transition-property: background-color, fill;
-  // transition-duration: $duration;
-  // transition-timing-function: $cubic;
-
-  &:hover,
-  &:focus {
-    background-color: white;
-    fill: blue;
-  }
-}
 .modal-close-button__dev {
   box-sizing: content-box;
   position: absolute;
