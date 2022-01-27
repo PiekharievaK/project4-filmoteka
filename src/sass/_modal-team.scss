@@ -18,14 +18,9 @@
     margin-bottom: 30px;
   }
 
-  @media (min-width: 768px) and (max-width: 1023px) {
-    min-width: 150px;
-    min-height: 150px;
-  }
-
-  @media (min-width: 1024px) {
-    min-width: 175px;
-    min-height: 175px;
+  @media (min-width: 768px) {
+    min-width: 130px;
+    min-height: 130px;
   }
 }
 
@@ -184,6 +179,9 @@
   );
   &::-webkit-scrollbar {
     width: 0;
+  }
+  @media (min-width: 1024px) {
+    max-height: 93vh;
   }
 }
 
