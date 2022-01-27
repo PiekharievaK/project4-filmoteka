@@ -49,8 +49,12 @@ function onCardBtnClick(evt) {
   evt.currentTarget.classList.toggle('button-active');
   CardMoreBtn.querySelector('.developer-card__comment').classList.toggle('is-open');
   
+  
   if (CardMoreBtn.parentNode.classList == 'developer-card') {
     CardMoreBtn.parentNode.classList = 'card-open-details';
+  
+    CardMoreBtn.parentNode.scrollIntoView()
+  
     return
   }
   if (CardMoreBtn.parentNode.classList == 'card-open-details') {
